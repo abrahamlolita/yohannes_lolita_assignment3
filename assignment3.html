@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!--Lolita Yohannes
+COMM 644 - Assignement 3 -->
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3</title>
+    <script>
+        
+//PART I
+//Practice with Arrays (5 points)
+//STEP 1
+//var favMovies = ["Shawshank Redemption","Manchurian Candidate","The Newsroom", "Serendipity", "Miss Sloane"]
+//window.console.log(favMovies[1]);
+
+//STEP 2
+//var movies = [];
+//movies[0] = "Shawshank Redemption";
+//movies[1] = "Manchurian Candidate";
+//movies[2] = "The Newsroom";
+//movies[3] = "Serendipity";
+//movies[4] = "Miss Sloane";
+//window.console.log(movies[0]);
+
+//STEP 3
+//var movies = ["Shawshank Redemption","Manchurian Candidate","The Newsroom", "Serendipity", "Miss Sloane"]
+//movies.splice(2,0,"42");
+//window.console.log(movies.length);
+
+//STEP 4
+//var movies = [];
+//movies[0] = "Shawshank Redemption";
+//movies[1] = "Manchurian Candidate";
+//movies[2] = "The Newsroom";
+//movies[3] = "Serendipity";
+//movies[4] = "Miss Sloane";
+//delete movies[0];
+//window.console.log(movies);
+    
+//STEP 5
+//var movies = [];
+//var i;
+//movies[0] = "Shawshank Redemption";
+//movies[1] = "Manchurian Candidate";
+//movies[2] = "42";
+//movies[3] = "Miss Sloane";
+//movies[4] = "The Newsroom";
+//movies[5] = "Serendipity";
+//movies[6] = "Erin Brockovich";
+//for (i = 0; i < movies.length; i++) {
+//    window.console.log(movies[i]);
+//}
+
+//STEP 6
+//var movies = [];
+//var i;
+//movies[0] = "Shawshank Redemption";
+//movies[1] = "Manchurian Candidate";
+//movies[2] = "42";
+//movies[3] = "Miss Sloane";
+//movies[4] = "The Newsroom";
+//movies[5] = "Serendipity";
+//movies[6] = "Erin Brockovich";
+//for (i in movies) {
+//    window.console.log(movies[i]);
+//}
+
+//STEP 7
+//var movies = [];
+//var i;
+//movies[0] = "Shawshank Redemption";
+//movies[1] = "Manchurian Candidate";
+//movies[2] = "42";
+//movies[3] = "Miss Sloane";
+//movies[4] = "The Newsroom";
+//movies[5] = "Serendipity";
+//movies[6] = "Erin Brockovich";
+//movies.sort();
+//for (i in movies) {
+//    window.console.log(movies[i]);
+//}
+        
+//STEP 8
+//var i;
+//var movies = [];
+//movies[0] = "Shawshank Redemption";
+//movies[1] = "Manchurian Candidate";
+//movies[2] = "42";
+//movies[3] = "Miss Sloane";
+//movies[4] = "The Newsroom";
+//movies[5] = "Serendipity";
+//movies[6] = "Erin Brockovich";
+//
+//var leastFavMovies = [];
+//leastFavMovies[0] = "The American";
+//leastFavMovies[1] = "Batman v Superman";
+//leastFavMovies[2] = "Mamma Mia";
+//
+//window.console.log("Movies I like:\n\n")
+//for (var i in movies) {
+//    window.console.log(movies[i]);	
+//}	
+//      
+//window.console.log("\n\nMovies I regret watching:\n\n")
+//		for (var i in leastFavMovies) {
+//			window.console.log(leastFavMovies[i]);	
+//		}
+        
+//STEP 9
+//var i;
+//var movies = [];
+//var favMovies = [];
+//favMovies[0] = "Shawshank Redemption";
+//favMovies[1] = "Manchurian Candidate";
+//favMovies[2] = "42";
+//favMovies[3] = "Miss Sloane";
+//favMovies[4] = "The Newsroom";
+//favMovies[5] = "Serendipity";
+//favMovies[6] = "Erin Brockovich";
+//
+//var leastFavMovies = [];
+//leastFavMovies[0] = "The American";
+//leastFavMovies[1] = "Batman v Superman";
+//leastFavMovies[2] = "Mamma Mia";
+//
+//movies = favMovies.concat(leastFavMovies);
+//movies.sort();
+//movies.reverse();
+//for (var i in movies) {
+//    window.console.log(movies[i]);	
+//}	
+
+//STEP 10
+//var i;
+//var movies = [];
+//var favMovies = [];
+//favMovies[0] = "Shawshank Redemption";
+//favMovies[1] = "Manchurian Candidate";
+//favMovies[2] = "42";
+//favMovies[3] = "Miss Sloane";
+//favMovies[4] = "The Newsroom";
+//favMovies[5] = "Serendipity";
+//favMovies[6] = "Erin Brockovich";
+//
+//var leastFavMovies = [];
+//leastFavMovies[0] = "The American";
+//leastFavMovies[1] = "Batman v Superman";
+//leastFavMovies[2] = "Mamma Mia";
+//        
+//movies = favMovies.concat(leastFavMovies);
+//    window.console.log(movies.pop());	
+
+//STEP 11
+//var i;
+//var movies = [];
+//var favMovies = [];
+//favMovies[0] = "Shawshank Redemption";
+//favMovies[1] = "Manchurian Candidate";
+//favMovies[2] = "42";
+//favMovies[3] = "Miss Sloane";
+//favMovies[4] = "The Newsroom";
+//favMovies[5] = "Serendipity";
+//favMovies[6] = "Erin Brockovich";
+//
+//var leastFavMovies = [];
+//leastFavMovies[0] = "The American";
+//leastFavMovies[1] = "Batman v Superman";
+//leastFavMovies[2] = "Mamma Mia";
+//        
+//movies = favMovies.concat(leastFavMovies);
+//    window.console.log(movies.shift());	
+
+//STEP 12
+//var movies = [];
+//movies[0] = "Shawshank Redemption";
+//movies[1] = "Manchurian Candidate";
+//movies[2] = "42";
+//movies[3] = "Miss Sloane";
+//movies[4] = "The Newsroom";
+//movies[5] = "Serendipity";
+//movies[6] = "Erin Brockovich";
+//movies[7] = "The American";
+//movies[8] = "Batman v Superman";
+//movies[9] = "Mamma Mia";
+//movies.splice(7,9,"Hidden Figures", "Argo","Good Will Hunting");
+//    window.console.log(movies);
+
+//STEP 13
+//var employees;
+//var employee1 = [];
+//employee1["id"] = 0241;
+//employee1["name"] = "Messay";
+//employee1["title"] = "Software Developer";
+//employee1["department"] = "IT";
+//employee1["currentEmp"] = true;
+//
+//var employee2 = [];
+//employee2["id"] = 1352;
+//employee2["name"] = "Nicole";
+//employee2["title"] = "Regional Manager";
+//employee2["department"] = "Sales";
+//employee2["currentEmp"] = false;
+//    
+//employees = [employee1, employee2];
+//window.console.log(employees[1]["name"]);  
+
+//14.	Using the above code, modify the code slightly so that you’re using a loop to loop through the array and printing out the names of both employees.
+//STEP 13
+//var i;
+//var employees;
+//var employee1 = [];
+//employee1["id"] = 0241;
+//employee1["name"] = "Messay";
+//employee1["title"] = "Software Dev";
+//employee1["department"] = "IT";
+//employee1["currentEmp"] = true;
+//
+//var employee2 = [];
+//employee2["id"] = 1352;
+//employee2["name"] = "Nicole";
+//employee2["title"] = "Regional Manager";
+//employee2["department"] = "Sales";
+//employee2["currentEmp"] = false;
+//
+//employees = [employee1, employee2];
+//for (i = 0; i < employees.length; i++) {
+//    window.console.log(employees[i]["name"]);
+//}	
+        
+//STEP 15
+//var i;
+//var employees;
+//var employee1 = [];
+//employee1["id"] = 0241;
+//employee1["name"] = "Messay";
+//employee1["title"] = "Software Dev";
+//employee1["department"] = "IT";
+//employee1["currentEmp"] = true;
+//
+//var employee2 = [];
+//employee2["id"] = 1352;
+//employee2["name"] = "Nicole";
+//employee2["title"] = "Regional Manager";
+//employee2["department"] = "Sales";
+//employee2["currentEmp"] = true;
+//
+//var employee3 = [];
+//employee3["id"] = 2930;
+//employee3["name"] = "Max";
+//employee3["title"] = "Web Developer";
+//employee3["department"] = "IT";
+//employee3["currentEmp"] = false;
+//
+//employees = [employee1, employee2, employee3];
+//for (i = 0; i < employees.length; i++) {
+//    if (employees[i]["currentEmp"] == true){
+//        window.console.log(employees[i]["name"]);
+//    }
+//}	
+
+//STEP 16  
+//var i;
+//var favMovies = [["Shawshank Redemption", 1],["Manchurian Candidate",2], ["The Newsroom",3], ["Serendipity",4], ["Miss Sloane",5]];
+//var movieName = [];
+//for (i = 0; i < favMovies.length; i++) {
+//     movieName += "\n" + favMovies[i].filter(function(type){
+//        return typeof type == "string";
+//    });
+//}
+//window.console.log(movieName);
+        
+
+//Practice with Functions (5 points)
+//STEP 17
+//var displayMessage = function(x) {
+//            window.console.log(x);
+//    }
+//displayMessage("Practice with Functions");
+      
+
+//STEP 18
+//function calculate(x,y) {          
+//    window.console.log(x % y);
+//}
+//calculate(20,3);
+
+//STEP 19
+//var i;
+//var namesEmp;
+//var employees = ["Messay","Nicole", "Max", "Layla", "Lucas", "Kim", "Philip"];
+//var showEmployee = function(emp) {
+//    for (i = 0, namesEmp = ""; i < employees.length; i++){
+//        namesEmp += emp[i].toUpperCase() + "\n";
+//}
+//return "Employees:\n\n" + namesEmp;
+//}
+//        
+//window.console.log(showEmployee(employees));
+
+    
+ //PART II 
+// The Rock, Paper, Scissors Game (10 points)
+//STEP 20
+//var playerChoice;
+//var playerInput = function(){
+//    playerChoice = window.prompt("Please choose either rock, paper, or scissors").toLowerCase();
+//
+//    if(playerChoice !== "rock" && playerChoice !== "paper" && playerChoice !== "scissors"){
+//         window.alert(playerChoice + " is an invalid entry");
+//        playerInput();
+//    }
+//}
+//playerInput();
+//var computerChoice = Math.random();
+//if (computerChoice <= 0.34) {
+//    computerChoice === "rock";
+//} else if (computerChoice <= 0.67) {
+//    computerChoice === "paper";
+//} else {
+//    computerChoice === "scissors"
+//}
+//
+//if (playerChoice == computerChoice) {
+//            window.alert("The result is a tie");
+//        } else if (playerChoice == "rock") {
+//            if (computerChoice == "scissors") {
+//               window.alert("computer : scissors" + "\n" + "you won");
+//            } else {
+//                window.alert("computer : paper" + "\n" + "you lost");   
+//            }
+//        } else if (playerChoice == "paper") {
+//            if (computerChoice == "rock") {
+//              window.alert("computer: rock" + "\n" + "you won");
+//            } else {
+//                alert("computer : scissors" + "\n" + "you lost");   
+//            }
+//        } else if (playerChoice == "scissors") {
+//            if (computerChoice == "paper") {
+//               window.alert("computer : paper" + "\n" + "you won");
+//            } else {
+//               window.alert("computer: rock" + "\n" + "you lost");   
+//            } 
+//        }
+
+//The Basic Calculator (10 points)
+//STEP 21
+//function userInput() {
+//    var num1 = Number(window.prompt("Enter a number"));
+//    var num2 = Number(window.prompt("Enter a second number"));
+//    var operation = window.prompt("Would you like to add, subtract, multiply, or divide?");
+//    window.alert(calculate(num1, num2, operation));
+//}
+//function calculate(num1, num2, operation) {
+//     switch (operation) {
+//                case "add":
+//                    return num1 + num2;
+//                    break;
+//                case "subtract":
+//                    return num1 - num2;
+//                    break;					
+//                case "multiply":
+//                    return num1 * num2;
+//                    break;					
+//                case "divide":
+//                    return num1 / num2;
+//                    break;
+//                default:
+//                    window.alert(operation + " is an invalid entry");
+//                    userInput ();
+//        }
+//}  
+//userInput ();
+
+//Death by JavaScript (4 points each for 20 points total)
+//STEP 22
+//1.Write a JavaScript function that when called, returns a passed in string with letters in alphabetical order. Assume punctuation and number symbols are not included in the passed-in string.
+//
+//Sample Data and Output
+//Example string: 'webmaster' 
+//Expected Output: 'abeemrstw'
+//
+//function alphOrder (str) {
+//    return str.split("").sort().join("");
+//}
+//    window.console.log(alphOrder("webmaster"));
+
+        
+//2.Write a JavaScript function that accepts a string as a parameter and when called, converts the first letter of each word of the string to upper case characters and return it.
+//
+//Sample Data and Output
+//Example string: 'the quick brown fox' 
+//Expected Output: 'The Quick Brown Fox'
+//
+//
+//function firstCapped(str) { 
+//  var i;
+//  var strArray = str.split(' ');
+//  var firstLetCaps = [];
+//    
+//  for(i = 0; i < strArray.length; i++){
+//      firstLetCaps.push(strArray[i].charAt(0).toUpperCase()+strArray[i].slice(1));
+//  }
+//  return firstLetCaps.join(' ');
+//}
+//window.console.log(firstCapped("the quick brown fox"));
+        
+        
+//3.Write a JavaScript function that accepts a string as a parameter and when called, counts the number of vowels within the string and returns that number.
+//
+//Sample Data and Output
+//Example string: 'The quick brown fox' 
+//Expected Output: 5
+//
+//function strVowel(str) {
+// var i;
+// var vowelMatch = str.match(/[aeiou]/ig);
+// var countVowel = 0;
+//      for(i = 0; i <str.length ; i++)  
+//      {
+//          if (vowelMatch.indexOf(str[i]) !== -1) 
+//          {
+//              countVowel += 1;
+//          }
+//      }
+//      return countVowel;
+//}
+//    window.console.log(strVowel("The quick brown fox"));
+        
+
+//4.Write a JavaScript function that when called, generates a string id (specified length) of 8 random characters and returns those characters as a string. This is a great application to learn for making password generator-type applications.
+//
+//Sample Data and Output
+//Expected Output: RCv1SBUC or PmJkc2Y2 or nIi5L0FA
+//
+//   function strId(idLength) {   
+//    var randomStr = Math.random().toString(36);
+//       return randomStr.substr(2, idLength);
+//   }
+//    window.console.log(strId(8));
+        
+
+//5.	Write a JavaScript function that accepts a list of country names as input and when called, returns the longest country name as the output.
+//
+//Sample Data and Output
+//Sample function: Longest_Country_Name(["Australia", "Germany", "United States of America"])
+//Expected output: "United States of America"
+//
+//function longestCountryName(countryNames){
+//countryNames.sort(function(a,b){
+//    return b.length-a.length});
+//		return countryNames[0];
+//}
+//	window.console.log(longestCountryName(["Australia", "Germany", "United States of America"]));
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
